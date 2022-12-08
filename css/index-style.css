@@ -1,0 +1,265 @@
+body{
+    background-color: rgb(4, 143, 161);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    color: white;
+    overflow: hidden;
+}
+
+
+/* start side bar  */
+#navBar{
+    z-index: 9999;
+}
+#navbar .outer-box{
+    width: 19%;
+    flex-direction: column;
+    background-color: white !important ;
+}
+#navbar .outer-box img{
+    width: 50px;
+}
+#navbar .inside-box{  
+    background-color:rgb(4, 143, 161) !important ;
+}
+
+#navbar .inside-box ul{
+    list-style: none;
+
+}
+.inside-box ul li  {
+    
+   
+    padding: 20px 0;
+    position: relative;
+   top: 50%;
+    opacity: 0;
+    
+  transition: top 0.5s, opacity 0.5s;
+  -webkit-transition: top 0.5s, opacity 0.5s;
+  -moz-transition: top 0.5s, opacity 0.5s;
+  -ms-transition: top 0.5s, opacity 0.5s;
+  -o-transition: top 0.5s, opacity 0.5s;
+    
+
+  }
+#navbar .inside-box a{
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+#navbar #closeMenu{
+    cursor: pointer;
+    display: none;
+}
+#navbar #togellMenu{
+    
+    cursor: pointer;
+}
+/* end side bar  */
+
+
+
+/* intergration  */
+.card{
+    background-color:rgb(185, 194, 195) !important  ;
+    padding:  20px 0;
+}
+.card i{
+    color: rgb(4, 143, 161) !important;
+}
+#ingredSection .card h4{
+    color: white ;
+    cursor: pointer !important;
+    font-weight: 800 !important;
+}
+.cardCat{
+    position: relative; 
+}
+.cardCat img{
+    width: 100%;
+}
+.card-body{
+    background-color:rgb(247, 243, 243,.7) ;
+    color: rgb(4, 143, 161) ;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 1s;
+}
+.catContainer:hover .card-body{
+    top: 0;
+    opacity: 1;
+}
+.card-body .card-text{
+    cursor: pointer;
+}
+
+.item{
+    position: relative !important;
+    overflow: hidden;
+}
+.item:hover .imgCaption{
+    top: 0 !important;
+    opacity: 1 !important; 
+}
+.item .headItem{
+    cursor: pointer;
+}
+.imgCaption{
+    background-color:rgb(247, 243, 243,.7) !important;
+    color: rgb(4, 143, 161) !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    bottom: 0 !important;
+    right: 0 !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    opacity: 0 !important;
+    transition: all 1s !important;
+    
+}
+
+/* start contect section  */
+.contact input{
+    background-color: rgb(3, 94, 106) !important;
+    border: none;
+    box-shadow: rgb(247, 247, 247,0.4) 0px 5px 15px;
+    text-align: center !important;
+    color: white !important;
+    outline: none !important;
+
+}
+.contact input:focus{
+    border: white !important;
+    outline: white !important;
+    box-shadow: rgb(247, 247, 247,0.4) 0px 5px 15px !important;
+}
+ .section-contact button{
+ /* box-shadow: rgba(247, 247, 247,0.4) 0px 5px 15px;  */
+  border: 1px solid white !important;
+ border-radius: 20px;
+ padding: 10px 40px;
+ background-color: rgb(238, 233, 233) !important;
+ color:rgb(3, 94, 106) !important; 
+
+
+ } 
+.section-contact button:hover{
+    background-color:rgb(3, 94, 106) ;
+} 
+
+/* end contect section  */
+
+/* start discription section  */
+
+.descripationSection{
+    display: none;
+}
+.r1{
+   margin: 8px;
+   padding: 5px 8px;
+    border:1px solid white ;
+    background-color:rgb(3, 83, 93);
+    border-radius: 10px;
+}
+.links .youtub{
+    background-color: rgb(249, 115, 115);
+}
+.links .Source{
+    background-color: rgb(128, 245, 245);
+}
+.links a{
+    padding: 5px 14px ;
+    margin: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+/* start discription section  */
+
+/* start landing page  */
+.landing{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgb(163, 162, 162) ;
+    z-index: 9999999999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.spinner {
+    width: 40px;
+    height: 40px;
+  
+    position: relative;
+    margin: 100px auto;
+  }
+  
+  .double-bounce1, .double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color:rgb(3, 83, 93) ;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+  }
+  
+  .double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+  }
+  
+  @-webkit-keyframes sk-bounce {
+    0%, 100% { -webkit-transform: scale(0.0) }
+    50% { -webkit-transform: scale(1.0) }
+  }
+  
+  @keyframes sk-bounce {
+    0%, 100% { 
+      transform: scale(0.0);
+      -webkit-transform: scale(0.0);
+    } 50% { 
+      transform: scale(1.0);
+      -webkit-transform: scale(1.0);
+    }
+  }
+  /* end landing page  */
+
+
+  @media screen and (max-width:1337px){
+    #navbar {
+       /* left: -279.25px; */
+       width: 30%;
+    }
+    #navbar .outer-box{
+        width: 25%;
+        flex-direction: column;
+        background-color: white !important ;
+    }
+
+  }
+  @media screen and (max-width:1200px){
+    #navbar{
+        /* left: -241.75px; */
+        width: 40%;
+    }
+  }
